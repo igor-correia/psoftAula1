@@ -21,15 +21,15 @@ public class Produto {
         return this.preco;
     }
 
-    public void setFabricante() {
+    public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
 
-    public void setNome() {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setPreco() {
+    public void setPreco(Double preco) {
         this.preco = preco;
     }    
 }

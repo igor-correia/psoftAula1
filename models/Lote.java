@@ -1,6 +1,6 @@
-import  java.util.Date;
+import java.util.Date;
 
-public class Produto {
+public class Lote {
     private int quantidade;
     private Date validade;
     private Produto produto;
@@ -11,7 +11,7 @@ public class Produto {
         this.produto = produto;
     }
 
-    public String getQuantidade() {
+    public int getQuantidade() {
         return this.quantidade;
     }
 
@@ -19,7 +19,7 @@ public class Produto {
         return this.validade;
     }
 
-    public Double getProduto() {
+    public Produto getProduto() {
         return this.produto;
     }
 
@@ -27,11 +27,11 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public void setValidade() {
+    public void setValidade(Date validade) {
         this.validade = validade;
     }
 
-    public void setProduto() {
+    public void setProduto(Produto produto) {
         this.produto = produto;
     } 
 }
