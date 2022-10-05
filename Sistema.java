@@ -1,9 +1,8 @@
-import  java.util.Date;
-
-public class Main {
+public class Sistema {
     public static void main(String[] args) {
-        Produto produto = new Produto("leite", "nestlé", 10.00);
-        Date data = new Date();
-        Lote lote = new Lote(5, data, produto);
+        ProdutoRepository repositorio = new ProdutoRepository();
+        ProdutoService prodServicos = new ProdutoService(repositorio);
+        prodServicos.create("eu","eu também", 5.00);
+        System.out.println(prodServicos.list());
     }
 }
