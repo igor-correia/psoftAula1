@@ -1,4 +1,4 @@
-public class ProdutoService(ProdutoRepository repositorio) implements Fachada<Produto>{
+public class ProdutoService{
     private ProdutoRepository repositorio;
     
     public ProdutoService(ProdutoRepository repositorio) {
@@ -12,6 +12,6 @@ public class ProdutoService(ProdutoRepository repositorio) implements Fachada<Pr
     }
 
     public Produto[] list() {
-        return this.repositorio.getAll();
+        return this.repositorio.list();
     }
 }
