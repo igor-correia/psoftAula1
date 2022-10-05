@@ -1,7 +1,7 @@
 import java.util.Date;
 
-public class LoteService(LoteRepository repositorio) implements Fachada<Lote> {
-    private LoteRepositorio repositorio;
+public class LoteService {
+    private LoteRepository repositorio;
     
     public LoteService(LoteRepository repositorio) {
         this.repositorio = repositorio;
@@ -14,6 +14,6 @@ public class LoteService(LoteRepository repositorio) implements Fachada<Lote> {
     }
 
     public Lote[] list() {
-        return this.repositorio.getAll();
+        return this.repositorio.list();
     }
 }
